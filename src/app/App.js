@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import { Home, Settings, Scanner, Modal } from './src/pages';
+import { Home, Settings, Scanner, Modal } from '../pages';
 
 class App extends Component {
   render() {
