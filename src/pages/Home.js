@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import { Text } from 'react-native';
+import { StyledButton, Page, ButtonGroup } from '../components';
 import { ROUTES } from '../constants';
 
 class Home extends Component {
@@ -9,29 +10,29 @@ class Home extends Component {
 
   render() {
     return (
-      <View>
+      <Page>
         <Text>Home page</Text>
-        <Button
-          title="Settings"
-          onPress={() => {
-            this.navigate(ROUTES.SETTINGS);
-          }}
-        >
-          Settings
-        </Button>
-        <Button
-          title="Modal"
-          onPress={() => {
-            this.navigate('Modal');
-          }}
-        />
-        <Button
-          title="Scanner"
-          onPress={() => {
-            this.navigate('Scanner');
-          }}
-        />
-      </View>
+        <ButtonGroup>
+          <StyledButton
+            title="Settings"
+            onPress={() => {
+              this.navigate(ROUTES.SETTINGS);
+            }}
+          />
+          <StyledButton
+            title="Modal"
+            onPress={() => {
+              this.navigate('Modal');
+            }}
+          />
+          <StyledButton
+            title="Scanner"
+            onPress={() => {
+              this.navigate('Scanner');
+            }}
+          />
+        </ButtonGroup>
+      </Page>
     );
   }
 }

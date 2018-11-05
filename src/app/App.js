@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import { Button } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
+import { ThemeProvider } from 'styled-components';
 import { Home, Settings, Scanner, Modal } from '../pages';
+import { theme } from '../components';
 
 class App extends Component {
   render() {
-    return <RootStack />;
+    return (
+      <ThemeProvider theme={theme}>
+        <RootStack />
+      </ThemeProvider>
+    );
   }
 }
 
