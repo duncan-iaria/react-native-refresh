@@ -3,7 +3,7 @@ const detox = require('detox');
 const config = require('../package.json').detox;
 
 // console.error('error:', before);
-jest.setTimeout(60000);
+jest.setTimeout(30000);
 
 beforeAll(async () => {
   await detox.init(config);

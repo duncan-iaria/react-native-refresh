@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { StyledText } from './';
 
-export const StyledButton = ({ title, onPress }) => {
+export const StyledButton = ({ title, onPress, testID }) => {
   return (
-    <ButtonWrapper onPress={onPress}>
+    <ButtonWrapper onPress={onPress} testID={testID}>
       <ButtonText textAlign="center">{title}</ButtonText>
     </ButtonWrapper>
   );
