@@ -12,7 +12,7 @@ class Settings extends Component {
     const { navigation } = this.props;
     return (
       <View>
-        <Text>Settings</Text>
+        <Text testID="settingsText">Settings</Text>
         <Text>{navigation.getParam('testParam', 'Test Failed :(')}</Text>
         <Button
           title="Change Title"

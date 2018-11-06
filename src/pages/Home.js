@@ -11,10 +11,12 @@ class Home extends Component {
   render() {
     return (
       <Page>
-        <Text>Home page</Text>
+        <Text testID="homeText">Home page</Text>
+        <Text testID="testId">Test Tag</Text>
         <ButtonGroup>
           <StyledButton
             title="Settings"
+            testID="settingsButton"
             onPress={() => {
               this.navigate(ROUTES.SETTINGS);
             }}
