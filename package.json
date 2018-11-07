@@ -1,6 +1,6 @@
 {
   "name": "empty-project-template",
-  "main": "./src/app/Entry.js",
+  "main": "./src/app/entry.js",
   "private": true,
   "scripts": {
     "start": "expo start",
@@ -15,6 +15,9 @@
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
     "react-navigation": "^2.18.2",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "styled-components": "^4.0.3"
   },
   "prettier": {
@@ -25,7 +28,7 @@
   },
   "devDependencies": {
     "detox": "^9.0.6",
-    "detox-expo-helpers": "^0.4.0",
+    "detox-expo-helpers": "^0.6.0",
     "expo-detox-hook": "^1.0.10",
     "jest": "^23.6.0",
     "mocha": "^5.2.0"

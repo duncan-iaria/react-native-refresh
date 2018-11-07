@@ -33,6 +33,12 @@ class Home extends Component {
               this.navigate('Scanner');
             }}
           />
+          <StyledButton
+            title="Tickets"
+            onPress={() => {
+              this.navigate('Tickets');
+            }}
+          />
         </ButtonGroup>
       </Page>
     );
