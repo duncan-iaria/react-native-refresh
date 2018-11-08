@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TextInput } from 'react-native';
+import { TextInput, View, Text } from 'react-native';
 
 class Ticket extends Component {
   constructor(props) {
@@ -13,10 +13,15 @@ class Ticket extends Component {
   render() {
     const { ticketNumber } = this.state;
     return (
-      <TextInput
-        value={ticketNumber}
-        onChangeText={text => this.setState({ ticketNumber: text })}
-      />
+      <View>
+        <Text>Ticket</Text>
+        <TextInput
+          value={ticketNumber}
+          onChangeText={text => this.setState({ ticketNumber: text })}
+        />
+      </View>
     );
   }
 }
+
+export default Ticket;
